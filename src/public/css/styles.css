@@ -1,0 +1,74 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+
+.contacts > button {
+	margin: 5px;
+	width: 25%;
+	height: 50px;
+
+	font-size: 1.4rem;
+	font-weight: 600;
+
+	border: none;
+	border-radius: 5px;
+	background-color: #f0f0f0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+
+form > input {
+	margin: 3px;
+	width: 25%;
+	height: 50px;
+
+	font-size: 1.4rem;
+	font-weight: 600;
+
+	border: none;
+	border-radius: 5px;
+	background-color: #f0f0f0;
+}
+
+form > button {
+	margin: 5px;
+	width: 25%;
+	height: 50px;
+
+	font-size: 1.4rem;
+	font-weight: 600;
+
+	border: none;
+	border-radius: 5px;
+	background-color: #f0f0f0;
+}
+
+.add-btn {
+	background-color: #97E594;
+}
+
+.update-btn {
+	background-color: #97E594;
+}
+
+.delete-btn {
+	background-color: #DC9595;
+}
+
+.deny-btn {
+	background-color: #f0f0f0;
+}
