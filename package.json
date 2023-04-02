@@ -13,5 +13,9 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./build/index.js"
   }
 }
