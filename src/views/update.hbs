@@ -17,4 +17,7 @@
 	document.getElementById('input').oninput = () => {
 		document.getElementById('delete').disabled = true;
 	}
+	document.querySelectorAll('#contact-btn').forEach(btn => {
+		btn.disabled = true;
+	});
 </script>

@@ -161,7 +161,6 @@ form > button:hover {
 .deny-btn {
 	border: none;
 	border-radius: 5px;
-	cursor: not-allowed;
 	padding: 0.5rem 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
