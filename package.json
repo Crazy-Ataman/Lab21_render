@@ -15,7 +15,7 @@
     "node": "16"
   },
   "scripts": {
-    "src": "tsc",
-    "start": "node ./build/21-01.js"
+    "build": "tsc",
+    "start": "node ./dist/21-01.js"
   }
 }
