@@ -16,6 +16,6 @@
   },
   "scripts": {
     "build": "npm install && tsc",
-    "start": "node ../dist/21-01.js"
+    "start": "node ./dist/21-01.js"
   }
 }
