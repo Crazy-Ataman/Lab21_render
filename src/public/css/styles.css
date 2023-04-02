@@ -6,8 +6,9 @@
 	width: 100%;
 	height: 100%;
 	padding: 20px;
+	background-color: #f2f2f2;
 }
-
+	
 .contacts > button {
 	margin: 5px;
 	width: 25%;
@@ -18,7 +19,17 @@
 
 	border: none;
 	border-radius: 5px;
-	background-color: #f0f0f0;
+	background-color: #4caf50;
+	color: #fff;
+	transition: background-color 0.3s ease-in-out;
+
+	/* add a hover effect */
+	cursor: pointer;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.contacts > button:hover {
+	background-color: #388e3c;
 }
 
 form {
@@ -29,6 +40,7 @@ form {
 	width: 100%;
 	height: 100%;
 	padding: 20px;
+	background-color: #f2f2f2;
 }
 
 form > input {
@@ -41,7 +53,9 @@ form > input {
 
 	border: none;
 	border-radius: 5px;
-	background-color: #f0f0f0;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 form > button {
@@ -54,21 +68,111 @@ form > button {
 
 	border: none;
 	border-radius: 5px;
-	background-color: #f0f0f0;
+	background-color: #4caf50;
+	color: #fff;
+	transition: background-color 0.3s ease-in-out;
+
+	/* add a hover effect */
+	cursor: pointer;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+form > button:hover {
+	background-color: #388e3c;
 }
 
 .add-btn {
-	background-color: #97E594;
+	background-color: #08ee00;
+	color: #fff;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+	background-color: #21ca1e;
+}
+
+.add-btn {
+	background-color: #4fc24b;
+	animation: pulse 3s ease-in-out infinite;
+}
+	
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 .update-btn {
 	background-color: #97E594;
+	color: #fff;
+	transition: background-color 0.3s ease-in-out;
 }
+
+.update-btn:hover {
+	background-color: #59c757;
+	animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+	}
 
 .delete-btn {
 	background-color: #DC9595;
+	color: #fff;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+	background-color: #bf6c6c;
+}
+
+.delete-btn:hover {
+	background-color: #f05a5a;
+	animation: pulse 1.5s ease-in-out infinite;
+}
+	
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 .deny-btn {
-	background-color: #f0f0f0;
+	border: none;
+	border-radius: 5px;
+	cursor: not-allowed;
+	padding: 0.5rem 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.contacts > button:disabled,
+	form > button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+body{
+	background-color: #f2f2f2;
 }

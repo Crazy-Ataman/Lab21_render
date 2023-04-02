@@ -14,9 +14,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.engine('hbs', engine({ extname: 'hbs' }));
 app.set('view engine', 'hbs');
 app.set('views', './src/views');
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-app.use(express.static(join(__dirname, '/public')));
+
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = dirname(__filename);
+// app.use(express.static(join(__dirname, 'src/public')));
+
+app.use(express.static("src/public"));
 
 
 app.use('/', contactHandler.router);
